@@ -261,8 +261,9 @@ public class AuthorizerInterPaymentBeneficiary {
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.set(Constantes.AUTHORIZADED, Constantes.TYPE_TOKEN  + accessToken.getAccessToken() );
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.add(Constantes.ACCEPT, MediaType.APPLICATION_JSON.toString());
+		// headers.setContentType(MediaType.APPLICATION_JSON);
+		
+		//headers.add(Constantes.ACCEPT, MediaType.APPLICATION_JSON.toString());
 		
 		// URL
 		HttpEntity<?> entity = new HttpEntity<Object>(headers);
